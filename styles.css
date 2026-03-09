@@ -1,0 +1,98 @@
+/* Definición de Colores y Variables */
+:root {
+    --card-bg-light: #f4f4f4; /* Fondo gris muy suave para tarjetas sobre blanco */
+    --tracklist-bg: #4a4a4a;   /* Gris oscuro del boceto */
+    --text-purple: #a333c8;
+}
+
+/* Tipografía Monospace para todo el sitio (estilo técnico) */
+.text-monospace {
+    font-family: 'Courier New', Courier, monospace !important;
+}
+
+body {
+    background-color: #ffffff; /* FONDO BLANCO GENERAL */
+}
+
+/* --- HERO SECTION --- */
+.hero-section {
+    min-height: 75vh;
+    /* Degradado oscuro para legibilidad sobre la imagen de Gorillaz */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.8)), 
+                url('Gorillaz.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.main-title {
+    font-size: 6rem;
+    letter-spacing: -3px;
+}
+
+.description {
+    max-width: 550px;
+    font-size: 0.95rem;
+    color: #ddd;
+}
+
+/* --- SECCIÓN LA BANDA --- */
+.member-card {
+    background-color: var(--card-bg-light); /* Tarjeta gris claro sobre fondo blanco */
+    border-left: 5px solid currentColor; /* Borde del color del miembro */
+    border-radius: 0; /* Sin bordes redondeados */
+    transition: all 0.2s ease;
+}
+
+.member-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.text-purple { color: var(--text-purple); }
+
+/* Ajuste para mantener el offset solo en escritorio */
+@media (min-width: 768px) {
+    .member-col-offset {
+        max-width: 48%; /* Ajuste para que quepa con el offset */
+    }
+}
+
+/* --- SECCIÓN TRACKLIST --- */
+.tracklist-section {
+    background-color: var(--tracklist-bg); /* FONDO GRIS OSCURO */
+}
+
+.track-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1); /* Línea divisoria sutil */
+    font-size: 0.95rem;
+}
+
+/* --- SECCIÓN MANIFIESTO --- */
+.manifesto-text {
+    line-height: 1.2;
+    font-size: 3.5rem;
+}
+
+/* --- FOOTER --- */
+.bg-black {
+    background-color: #000000; /* FONDO NEGRO */
+}
+
+.footer-nav a {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.footer-nav a:hover {
+    color: #198754 !important; /* Verde al pasar el ratón */
+}
+
+.ultra-small {
+    font-size: 0.65rem;
+}
+
+/* --- RESPONSIVE ADJUSTMENTS --- */
+@media (max-width: 768px) {
+    .main-title { font-size: 3.5rem; }
+    .manifesto-text { font-size: 2.2rem; }
+}
