@@ -1,8 +1,6 @@
 /* Definición de Colores y Variables */
 :root {
-    --card-bg-light: #f4f4f4; /* Fondo gris muy suave para tarjetas sobre blanco */
     --tracklist-bg: #4a4a4a;   /* Gris oscuro del boceto */
-    --text-purple: #a333c8;
 }
 .text-monospace {
     font-family: "Jersey 20", sans-serif !important;
@@ -42,9 +40,7 @@
 }
 
 .member-card {
-    background-color: var(--card-bg-light); /* Tarjeta gris claro sobre fondo blanco */
-    border-left: 5px solid currentColor; /* Borde del color del miembro */
-    border-radius: 0; /* Sin bordes redondeados */
+    background-color: rgb(238, 231, 231);
     transition: all 0.2s ease;
 }
 
@@ -53,7 +49,7 @@
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-.text-purple { color: var(--text-purple); }
+.text-purple { color: rgb(214, 0, 214); }
 
 /* Ajuste para mantener el offset solo en escritorio */
 @media (min-width: 768px) {
@@ -62,15 +58,14 @@
     }
 }
 
-/* --- SECCIÓN TRACKLIST --- */
+/* --- seccion track list --- */
 .tracklist-section {
-    background-color: var(--tracklist-bg); /* FONDO GRIS OSCURO */
+    background-color: rgb(77, 77, 77);
 }
 
 .track-list li {
     padding: 10px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.1); /* Línea divisoria sutil */
-    font-size: 0.95rem;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
 .track:hover{
@@ -78,15 +73,14 @@
     box-shadow: 0 5px 15px rgba(0,0,0,0.1)
 }
 
-/* --- SECCIÓN MANIFIESTO --- */
+/* --- manifiesto --- */
 .manifesto-text {
-    line-height: 1.2;
-    font-size: 3.5rem;
+    font-size: 80px;
 }
 
-/* --- FOOTER --- */
+/* --- footer --- */
 .bg-black {
-    background-color: #000000; /* FONDO NEGRO */
+    background-color: #000000;
 }
 
 .footer-nav a {
@@ -95,7 +89,7 @@
 }
 
 .footer-nav a:hover {
-    color: #198754 !important; /* Verde al pasar el ratón */
+    color: #00ff2a !important; /* Verde al pasar el ratón */
 }
 
 .ultra-small {
