@@ -4,6 +4,16 @@
     font-style: normal;
 }
 
+.navbar {
+    background-color: transparent !important;
+    transition: background-color 1s ease;
+}
+
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.8) !important;
+    transition: background-color 1s ease;
+}
+
 .hero-section {
     min-height: 100vh;
     background: url(./img/fondo-header.png);
